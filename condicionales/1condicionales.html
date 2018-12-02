@@ -1,0 +1,29 @@
+﻿<!--Condicionales. Ejercicio 1.-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title>Condicionales Ejercicio 1</title>
+    </head>
+    <body>
+		<h1>Condicionales Ejercicio 1</h1>
+		<p>1. Crear un programa donde podamos introducir una hora y comprobandola con las 12 del mediodía nos indique si son buenos días o buenas tardes.</p>
+		
+		<p>Introduce una hora:</p>
+		
+		<input id="h" value="12" />
+		
+		<button onclick="hora()">Haz click</button>
+		
+		<p id="demo"></p>
+        
+		<script>
+		function hora(){
+			var dias, tardes;
+			dias = document.getElementById("h").value;
+			tardes = (dias < 12) ? "Buenos días":"Buenas tardes";
+			document.getElementById("demo").innerHTML = tardes;
+		}
+        </script>
+    </body>
+</html>

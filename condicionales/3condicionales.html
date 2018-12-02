@@ -1,0 +1,30 @@
+<!--Condicionales. Ejercicio 3.-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title>Condicionales Ejercicio 3</title>
+    </head>
+    <body>
+		<h1>Condicionales Ejercicio 3</h1>
+		<p>3. Hacer un programa en el que podamos introducir una nota y según ésta nos diga si está aprobado o no.</p>
+		
+		<p>Introduce tu nota:</p>
+		
+		<input id="h" value="Introduzca su nota" />
+		
+		<button onclick="f()">Haz click</button> 
+		
+		<p id="demo"></p>
+        
+		<script>
+		function f(){
+			var si, no;
+			si = document.getElementById("h").value;
+			no = (si > 4) ? "Has aprobado":"Has suspendido";
+			document.getElementById("demo").innerHTML = no;
+		}
+		
+        </script>
+    </body>
+</html>

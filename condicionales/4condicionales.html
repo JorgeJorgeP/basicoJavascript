@@ -1,0 +1,56 @@
+<!--Condicionales. Ejercicio 3.-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title>Condicionales Ejercicio 3</title>
+    </head>
+    <body>
+		<h1>Condicionales Ejercicio 3</h1>
+		<p>4. Hacer un programa similar al anterior pero que además nos diga si está suspendo, aprobado, notable, sobresaliente o matrícula de honor.</p>
+		
+		<p>Introduce tu nota:</p>
+		
+		<input id="h" value="Introduzca su nota" />
+		
+		<button onclick="f()">Haz click</button> 
+		
+		<p id="demo"></p>
+        
+		<script>
+		function f(){
+			var nota, mensaje;
+			nota = document.getElementById("h").value;
+			switch (nota){
+				case "0":
+				case "1":
+				case "2":
+				case "3":
+				case "4":
+					mensaje = "Suspenso";
+					break;
+				case "5":
+					mensaje = "Suficiente";
+					break;
+				case "6":
+					mensaje = "Aprobado";
+					break;
+				case "7":
+				case "8":
+					mensaje = "Notable";
+					break;
+				case "9":
+					mensaje = "Sobresaliente";
+					break;
+				case "10":
+					mensaje = "Matrícula de Honor";
+					break;
+				default:
+					mensaje = "El valor no es válido";
+			}
+			document.getElementById("demo").innerHTML = "Estás " + mensaje;
+		}
+		
+        </script>
+    </body>
+</html>
