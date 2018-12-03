@@ -1,0 +1,26 @@
+<!--Condicionales. Ejercicio 5.-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <title>Condicionales Ejercicio 5</title>
+    </head>
+    <body>
+		<h1>Condicionales Ejercicio 5</h1>
+		<p>5. Hacer un programa que nos muestre todos los días de la semana.</p>
+				
+		<p id="demo"></p>
+        
+		<script>
+		var dias, texto, x;
+			dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+			texto = "";
+			for (x = 0; x < dias.length; x++){
+				texto += dias[x] + "<br>"; 
+			}
+			document.getElementById("demo").innerHTML = texto;
+		
+		
+        </script>
+    </body>
+</html>
